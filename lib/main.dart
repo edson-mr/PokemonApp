@@ -8,10 +8,14 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
+    return  MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Pokemón App',
-      home: HomeScreen(),
+      home: const HomeScreen(),
+      theme: ThemeData(
+        colorSchemeSeed: Colors.indigo,
+        floatingActionButtonTheme: const FloatingActionButtonThemeData(backgroundColor: Colors.indigo)
+      ),
     );
   }
 }
